@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Финансовый калькулятор</title>
+  <script src="./code.js" defer></script>
+</head>
+<body>
+  <financial-calculator>
+<!-- financial-calculator.html -->
+<template id="financial-calculator-template">
+    <style>
+      /* Стили для компонента */
+    </style>
+    <form id="calculator-form">
+      <!-- Поля ввода для суммы кредита, процентной ставки, срока кредита -->
+      <label for="loan-amount">Сумма кредита:</label>
+      <input type="number" id="loan-amount" required>
+  
+      <label for="interest-rate">Процентная ставка (%):</label>
+      <input type="number" id="interest-rate" required>
+  
+      <label for="loan-term">Срок кредита (месяцы):</label>
+      <input type="number" id="loan-term" required>
+  
+      <!-- Результаты расчетов -->
+      <div id="results">
+        <p>Ежемесячный платеж: <span id="monthly-payment">0</span></p>
+        <p>Общая сумма к оплате: <span id="total-payment">0</span></p>
+        <p>Общий процент по кредиту: <span id="total-interest">0</span></p>
+      </div>
+    </form>
+  </template>
+  
+  <script>
+    // JavaScript код компонента
+  </script>
+  
+  </financial-calculator>
+</body>
+</html>
